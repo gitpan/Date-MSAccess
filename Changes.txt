@@ -1,0 +1,4 @@
+Revision history for Perl extension Date::MSAccess.
+
+1.00  Tue Jan 20 12:37:29 2004
+	- Original version

@@ -1,0 +1,79 @@
+NAME
+    "Date::MSAccess" - Manage dates in MS Access format
+
+Synopsis
+            use Date::MSAccess;
+
+            my($obj)  = Date::MSAccess -> new();
+            my($date) = $obj -> decode_date(37988); # Returns '20040101'.
+            my($now)  = $obj -> todays_date();      # Returns 38006 on 20-Jan-2004.
+
+Description
+    "Date::MSAccess" is a pure Perl module.
+
+    It can convert a number which is an MS Access date into a string of the
+    form 'YYYYMMDD'.
+
+    Also, it can return today's date in MS Access format.
+
+    Note: MS Access dates are based on 12 noon.
+
+    Note: MS Access dates can be fractional, eg 3008.25, but this module
+    currently ignores such fractions.
+
+Distributions
+    This module is available both as a Unix-style distro (*.tgz) and an
+    ActiveState-style distro (*.ppd). The latter is shipped in a *.zip file.
+
+    See http://savage.net.au/Perl-modules.html for details.
+
+    See http://savage.net.au/Perl-modules/html/installing-a-module.html for
+    help on unpacking and installing each type of distro.
+
+Constructor and initialization
+    new(...) returns a "Date::MSAccess" object.
+
+    This is the class's contructor.
+
+    Usage: Date::MSAccess -> new().
+
+    This option does not take any values.
+
+Method: decode_date(<A number corresponding to an MS Access date>)
+    Either returns a string of the form 'YYYYMMDD', or the string
+    '00000000'.
+
+    The latter was chosen to be compatible with MySQL and Postgres
+    'timestamp' fields.
+
+    eg: decode_date(37988) returns '20040101'.
+
+Method: todays_date()
+    Returns a number corresponding to today's date in MS Access format.
+
+    Eg: On 20-Jan-2004 the number returned was 38006.
+
+Required Modules
+    Date::Calc.
+
+Changes
+    See Changes.txt.
+
+Reference
+    http://msdn.microsoft.com/library/default.asp?url=/archive/en-us/dnaracc
+    gen/html/msdn_datetime.asp
+
+Author
+    "Date::MSAccess" was written by Ron Savage *<ron@savage.net.au>* in
+    2004.
+
+    Home page: http://savage.net.au/index.html
+
+Copyright
+    Australian copyright (c) 2004, Ron Savage. All rights reserved.
+
+            All Programs of mine are 'OSI Certified Open Source Software';
+            you can redistribute them and/or modify them under the terms of
+            The Artistic License, a copy of which is available at:
+            http://www.opensource.org/licenses/index.html
+
