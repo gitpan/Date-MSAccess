@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: Date-MSAccess
-version: 1.01
+version: 1.02
 author:
   - Ron Savage <ron@savage.net.au>
 abstract: Manage dates in MS Access format
@@ -10,5 +10,8 @@ requires:
 build_requires:
   Test::More: 0
   Test::Pod: 0
-provides: {}
-generated_by: Module::Build version 0.24
+provides:
+  Date::MSAccess:
+    file: lib/Date/MSAccess.pm
+    version: 1.02
+generated_by: Module::Build version 0.2607

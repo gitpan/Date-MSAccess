@@ -52,7 +52,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 
 );
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 # -----------------------------------------------
 
@@ -123,7 +123,7 @@ sub decode_date
 	}
 
 	$month	= "0$month"	if (length($month) == 1);
-	$day	= "0$date"	if (length($day) == 1);
+	$day	= "0$day"	if (length($day) == 1);
 
 	# One last check...
 

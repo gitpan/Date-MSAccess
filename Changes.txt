@@ -1,5 +1,8 @@
 Revision history for Perl extension Date::MSAccess.
 
+1.02  Mon Feb 14 09:47:00 2005
+	- Fix bug in adding '0' to the start of days in 1 .. 9
+
 1.01  Mon Jul 19 14:43:00 2004
 	- Change Makefile.PL to coexist with Module::Build
 	- Add t/pod.t to test all PODs
