@@ -1,7 +1,10 @@
-MSAccess.pm
+Build.PL
 Changes.txt
-MSAccess.html
+lib/Date/MSAccess.pm
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
+MANIFEST.SKIP
+META.yml
 README
+t/pod.t
 t/test.t

@@ -1,0 +1,14 @@
+--- #YAML:1.0
+name: Date-MSAccess
+version: 1.01
+author:
+  - Ron Savage <ron@savage.net.au>
+abstract: Manage dates in MS Access format
+license: artistic
+requires:
+  Date::Calc: 5.3
+build_requires:
+  Test::More: 0
+  Test::Pod: 0
+provides: {}
+generated_by: Module::Build version 0.24

@@ -7,20 +7,26 @@ WriteMakefile
 (
 	($] ge '5.005') ?
 	(
-		'AUTHOR' => 'Ron Savage (ron@savage.net.au)',
-		'ABSTRACT' => 'Convert MS Access dates into YYYYMMDD',
+		'AUTHOR'	=> 'Ron Savage (ron@savage.net.au)',
+		'ABSTRACT'	=> 'Convert MS Access dates into YYYYMMDD',
     ) : (),
-	clean				=>
+	clean			=>
 	{
-		FILES			=> 'blib/* Makefile MANIFEST Date-MSAccess-*'
+		FILES		=> 'blib/* Makefile MANIFEST Date-MSAccess-*'
 	},
-	dist				=>
+	dist			=>
 	{
-		COMPRESS		=> 'gzip',
-		SUFFIX			=> 'gz'
+		COMPRESS	=> 'gzip',
+		SUFFIX		=> 'gz'
 	},
-	DISTNAME			=> 'Date-MSAccess',
-	NAME				=> 'Date::MSAccess',
-	PREREQ_PM			=> {Date::Calc => 5.3},
-	VERSION_FROM		=> 'MSAccess.pm',
+	DISTNAME		=> 'Date-MSAccess',
+	NAME			=> 'Date::MSAccess',
+	PL_FILES		=> {},
+	PREREQ_PM		=>
+	{
+		Date::Calc	=> 5.3,
+		Test::More	=> 0,
+		Test::Pod	=> 0,
+	},
+	VERSION_FROM	=> 'lib/Date/MSAccess.pm',
 );
