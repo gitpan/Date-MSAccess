@@ -52,7 +52,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 
 );
-our $VERSION = '1.02';
+our $VERSION = '1.05';
 
 # -----------------------------------------------
 
@@ -244,14 +244,6 @@ Returns a number corresponding to today's date in MS Access format.
 
 Eg: On 20-Jan-2004 the number returned was 38006.
 
-=head1 Required Modules
-
-Date::Calc.
-
-=head1 Changes
-
-See Changes.txt.
-
 =head1 Reference
 
 http://msdn.microsoft.com/library/default.asp?url=/archive/en-us/dnaraccgen/html/msdn_datetime.asp
@@ -264,8 +256,7 @@ Home page: http://savage.net.au/index.html
 
 =head1 Copyright
 
-Australian copyright (c) 2004, Ron Savage. All rights reserved.
-
+Australian copyright (c) 2004, Ron Savage.
 	All Programs of mine are 'OSI Certified Open Source Software';
 	you can redistribute them and/or modify them under the terms of
 	The Artistic License, a copy of which is available at:
